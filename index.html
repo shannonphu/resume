@@ -14,10 +14,10 @@
 				<a href="#">Shannon Phu</a>
 			</div>
 			
-			<div id="contact">			
-				<a href="mailto:shannonphu@sbcglobal.net" id="email"><img src="mailicon.png" /> shannonphu@sbcglobal.net</a>
-				<a href="http://shannonphu.github.io/" id="website"><img src="globe.png" /> shannonphu.github.io</a>
-				<a href="https://github.com/shannonphu" id="github"><img src="githubicon.png" /> shannonphu</a>
+			<div id="contact" class="row">			
+				<a href="mailto:shannonphu@sbcglobal.net" id="email" class="medium-4 columns"><img src="mailicon.png" /> shannonphu@sbcglobal.net</a>
+				<a href="http://shannonphu.github.io/" id="website" class="medium-4 columns"><img src="globe.png" /> shannonphu.github.io</a>
+				<a href="https://github.com/shannonphu" id="github" class="medium-4 columns"><img src="githubicon.png" /> shannonphu</a>
 			</div>
 		</header>
 		
@@ -114,18 +114,22 @@
 
 		    var beforePrint = function() {
 		    	// before print
+		    	$('aside').removeClass('medium-4 columns');
+            	$('#workExperience').removeClass('medium-8 columns');
+            	$('#contact a').removeClass('medium-4 columns');
+            	$('#contact a').css('margin-right', '2em');
 		    };
 		    var afterPrint = function() {
             	$('aside').addClass('medium-4 columns');
             	$('#workExperience').addClass('medium-8 columns');
+            	$('#contact a').addClass('medium-4 columns');
+            	$('#contact a').css('margin-right', '0');
 		    };
 
 		    if (window.matchMedia) {
 		        var mediaQueryList = window.matchMedia('print');
 		        mediaQueryList.addListener(function(mql) {
 		            if (mql.matches) {
-		            	$('aside').removeClass('medium-4 columns');
-		            	$('#workExperience').removeClass('medium-8 columns');
 		                beforePrint();
 		            } else {
 		                afterPrint();
