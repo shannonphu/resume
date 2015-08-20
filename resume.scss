@@ -1,0 +1,151 @@
+$header-border: 3px solid #DEDEDE;
+$work-experience-width: 60%;
+$body-padding: 7%;
+$section-border: 1px solid darkgrey;
+$section-margin: 0 0 0 1em;
+$job-detail-font-size: 1.1em;
+$between-details-margin: 5px;
+
+body {
+	padding-left: $body-padding;
+	padding-right: $body-padding;
+	font-family: 'Titillium Web', sans-serif;
+
+	a {
+		cursor: pointer;
+	}
+}
+
+header {
+	margin-bottom: 10px;
+	a {
+		color: black;
+		font-weight: 600;
+		text-decoration: none;
+		&:hover {
+			color:black;
+		}
+	}
+
+	.name {
+		font-size: 4em;
+		text-align: center;
+		border-bottom: $header-border;
+	}
+
+	#contact {
+		text-align: center;
+		border-bottom: $header-border;
+		padding: 7px 0 7px 0;
+		#email {
+			float: left;
+		}
+		#github {
+			float: right;
+		}
+		#website {
+			margin: 0 auto;
+		}
+		img {
+			height: 1.4em;
+			vertical-align: text-top;
+		}
+	}
+}
+
+main {
+	li, ul {
+		line-height: 120%;
+	}
+
+	.subject {
+		margin-bottom: 2em;
+	}
+
+	.col {
+		display: inline-block;
+
+		h3 {
+			font-size: 1.5em;
+			font-weight: 500;
+		}
+		
+		section {
+			border-left: $section-border;
+
+			.jobTitle {
+				font-weight: 600;
+				margin-bottom: 0;
+				font-size: $job-detail-font-size
+			}
+
+			.companyName {
+				font-style: italic;
+			}
+
+			.details {
+				display: inline-block;
+				margin-bottom: 10px;
+				font-size: $job-detail-font-size - 0.1;
+			}
+
+			.jobInfo {
+				padding-left: 1em;
+			}
+
+			.when {
+				float: right;
+			}
+
+			li {
+				margin-bottom: $between-details-margin;
+			}
+		}
+	}
+
+	#workExperience {
+		//width: $work-experience-width;
+	}
+
+	aside {
+		//float: right;
+		//width: 92% - $work-experience-width;
+		font-size: 1.1em;
+
+		#education {
+			#school {
+				font-weight: 600;
+			}
+		}
+
+		ul {
+			margin: $section-margin;
+			margin-bottom: $between-details-margin;
+			padding: 0;
+		}
+
+		#expectedDate {
+			float: right;
+			font-size: 0.8em;
+		}
+
+		.subjectRight {
+			margin-bottom: 0.7em;
+		}
+	}
+}
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  #workExperience {
+		width: $work-experience-width;
+	}
+
+	aside {
+		float: right;
+		width: 92% - $work-experience-width;
+	}
+
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Cabin:400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,400italic,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="resume.css">
+		<title>Shannon Phu | Resume</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="name">
+				<a href="#">Shannon Phu</a>
+			</div>
+			
+			<div id="contact">			
+				<a href="mailto:shannonphu@sbcglobal.net" id="email"><img src="mailicon.png" /> shannonphu@sbcglobal.net</a>
+				<a href="http://shannonphu.github.io/" id="website"><img src="globe.png" /> shannonphu.github.io</a>
+				<a href="https://github.com/shannonphu" id="github"><img src="githubicon.png" /> shannonphu</a>
+			</div>
+		</header>
+		
+		<main>
+			<div class="col medium-8 columns" id="workExperience">
+				<h3>Work Experience</h3>
+
+					<section class="subject" >
+						<ul>
+							<div class="jobTitle">Software Engineering Intern</div>
+							<div class="companyName details">NASA Ames Research Center | NuLeaf Technologies</div>
+							<div class="timeRange when details">June 2015 - present</div>
+							<div class="jobInfo">
+								<li>design class model and structure of simulation software for atomic interactions and molecular forces</li>
+								<li>implement websockets and CGI programming to bridge C++ server and web client</li>
+								<li>built database table in SQL for company website</li>
+							</div>
+						</ul>
+					</section>
+
+					<section class="subject" >
+						<ul>
+							<div class="jobTitle">Web Development Intern</div>
+							<div class="companyName details">The Daily Bruin</div>
+							<div class="timeRange when details">April 2015 - present</div>
+							<div class="jobInfo">
+								<li>design and develop custom responsive websites suiting the needs of reporters and graphic designers</li>
+								<li>consistently maintain and update content on site using WordPress</li>
+							</div>
+						</ul>
+					</section>
+
+					<section>
+						<ul>
+							<div class="jobTitle">Full Stack Developer</div>
+							<div class="companyName details">Lively DevOps</div>
+							<div class="timeRange when details">January 2012 - present</div>
+							<div class="jobInfo">
+								<li>create variety interactive, mobile-friendly web applications for varying content</li>
+								<li>adhere to MVC design pattern to write easily extendable code</li>
+								<li>gather feedback on UI/UX to improve site navigation and usage</li>
+							</div>
+						</ul>
+					</section>
+			</div>
+
+			<aside class="col medium-4 columns">
+				<div class="subjectRight" id="education">
+					<h3>Education</h3>
+					<section>
+						<ul id="expectedDate">expected 2018</ul>
+						<ul id="school">UCLA</ul>
+						<ul id="degree">B.S. Computer Science and Engineering</ul>
+					</section>
+				</div>
+				
+				<div class="subjectRight" id="techSkills">
+					<h3>Technical Skills</h3>
+					<section>
+						<ul>C++, Objective-C</ul>
+						<ul>HTML, CSS, Sass</ul>
+						<ul>JavaScript, jQuery, Node.js</ul>
+						<ul>Python, Django</ul>
+						<ul>SQL, Git</ul>
+					</section>
+				</div>
+				
+				<div id="projects">
+					<h3>Projects</h3>
+					<section>
+						<ul><strong>BoulderBlast</strong> Blast through bullet-shooting robots and other obstacles to collect all the gems in this multi-level C++ game</ul>
+						<ul><strong>Find Me Milk Tea</strong> creative iOS MapKit app displaying closest bubble tea places and their menus</ul>
+ 						<ul><strong>xspense</strong> track expenses and budgets to interpret spending in this Django webapp</ul>
+						<ul style="font-size: 0.8em;text-align:center;margin-top: 10px;margin-bottom:10px;">See more on my GitHub!</ul>
+					</section>
+				</div>
+				
+				<div id="otherSkills">
+					<h3>Additional Skills</h3>
+					<section style="margin-bottom: 0;">	
+						<ul>iOS App Development</ul>
+						<ul>UI Design</ul>
+						<ul>Fluency in English, Spanish, and Chinese</ul>
+					</section>
+				</div>
+			</aside>
+		</main>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script type="text/javascript">
+
+			var isPrint = window.location.pathname.indexOf("/print/") > -1;
+			console.log(isPrint);
+
+
+		    var beforePrint = function() {
+		    	// before print
+		    };
+		    var afterPrint = function() {
+            	$('aside').addClass('medium-4 columns');
+            	$('#workExperience').addClass('medium-8 columns');
+		    };
+
+		    if (window.matchMedia) {
+		        var mediaQueryList = window.matchMedia('print');
+		        mediaQueryList.addListener(function(mql) {
+		            if (mql.matches) {
+		            	$('aside').removeClass('medium-4 columns');
+		            	$('#workExperience').removeClass('medium-8 columns');
+		                beforePrint();
+		            } else {
+		                afterPrint();
+		            }
+		        });
+		    }
+
+		    window.onbeforeprint = beforePrint;
+		    window.onafterprint = afterPrint;
+
+		</script>
+	</body>
+</html>

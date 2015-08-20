@@ -1,0 +1,86 @@
+body {
+  padding-left: 7%;
+  padding-right: 7%;
+  font-family: 'Titillium Web', sans-serif; }
+  body a {
+    cursor: pointer; }
+
+header {
+  margin-bottom: 10px; }
+  header a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none; }
+    header a:hover {
+      color: black; }
+  header .name {
+    font-size: 4em;
+    text-align: center;
+    border-bottom: 3px solid #DEDEDE; }
+  header #contact {
+    text-align: center;
+    border-bottom: 3px solid #DEDEDE;
+    padding: 7px 0 7px 0; }
+    header #contact #email {
+      float: left; }
+    header #contact #github {
+      float: right; }
+    header #contact #website {
+      margin: 0 auto; }
+    header #contact img {
+      height: 1.4em;
+      vertical-align: text-top; }
+
+main li, main ul {
+  line-height: 120%; }
+main .subject {
+  margin-bottom: 2em; }
+main .col {
+  display: inline-block; }
+  main .col h3 {
+    font-size: 1.5em;
+    font-weight: 500; }
+  main .col section {
+    border-left: 1px solid darkgrey; }
+    main .col section .jobTitle {
+      font-weight: 600;
+      margin-bottom: 0;
+      font-size: 1.1em; }
+    main .col section .companyName {
+      font-style: italic; }
+    main .col section .details {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 1em; }
+    main .col section .jobInfo {
+      padding-left: 1em; }
+    main .col section .when {
+      float: right; }
+    main .col section li {
+      margin-bottom: 5px; }
+main aside {
+  font-size: 1.1em; }
+  main aside #education #school {
+    font-weight: 600; }
+  main aside ul {
+    margin: 0 0 0 1em;
+    margin-bottom: 5px;
+    padding: 0; }
+  main aside #expectedDate {
+    float: right;
+    font-size: 0.8em; }
+  main aside .subjectRight {
+    margin-bottom: 0.7em; }
+
+@media print {
+  a[href]:after {
+    content: none !important; }
+
+  #workExperience {
+    width: 60%; }
+
+  aside {
+    float: right;
+    width: 32%; } }
+
+/*# sourceMappingURL=resume.css.map */
