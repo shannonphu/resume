@@ -34,16 +34,17 @@ header {
 	}
 
 	#contact {
+		text-align: center;
 		border-bottom: $header-border;
 		padding: 7px 0 7px 0;
 		#email {
-			text-align: left;
+			//text-align: left;
 		}
 		#github {
-			text-align: right;
+			//text-align: right;
 		}
 		#website {
-			text-align: right;
+			//text-align: right;
 		}
 		img {
 			height: 1.4em;

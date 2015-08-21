@@ -18,14 +18,9 @@ header {
     text-align: center;
     border-bottom: 3px solid #DEDEDE; }
   header #contact {
+    text-align: center;
     border-bottom: 3px solid #DEDEDE;
     padding: 7px 0 7px 0; }
-    header #contact #email {
-      text-align: left; }
-    header #contact #github {
-      text-align: right; }
-    header #contact #website {
-      text-align: right; }
     header #contact img {
       height: 1.4em;
       vertical-align: text-top; }
