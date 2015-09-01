@@ -63,7 +63,7 @@ main {
 	}
 
 	.col {
-		display: inline-block;
+		display: block;
 
 		h3 {
 			font-size: 1.5em;
@@ -104,12 +104,12 @@ main {
 	}
 
 	#workExperience {
-		//width: $work-experience-width;
+		width: $work-experience-width;
 	}
 
 	aside {
-		//float: right;
-		//width: 92% - $work-experience-width;
+		float: right;
+		width: 100% - $work-experience-width;
 		font-size: 1.1em;
 
 		#education {
@@ -136,16 +136,28 @@ main {
 }
 
 @media print {
-  a[href]:after {
-    content: none !important;
-  }
-  #workExperience {
-		width: $work-experience-width;
+	a[href]:after {
+		content: none !important;
+	}
+
+	.name {  font-size: 3.2em !important; }
+	#contact { font-size: 0.8em !important }
+
+	#workExperience {
+		float: left !important;
+		width: $work-experience-width !important;
+		display: inline-block !important;
 	}
 
 	aside {
-		float: right;
-		width: 92% - $work-experience-width;
+		float: right !important;
+		display: inline-block !important;
+		width: 97% - $work-experience-width !important;
 	}
 
+	#otherSkills {
+		h3 { font-size: 1.3em; }
+	}
+
+	ul { font-size: 0.8em; }
 }

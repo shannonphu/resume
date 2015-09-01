@@ -15,7 +15,7 @@
 			</div>
 			
 			<div id="contact" class="row">			
-				<a href="mailto:shannonphu@sbcglobal.net" id="email" class="medium-4 columns"><img src="mailicon.png" /> shannonphu@sbcglobal.net</a>
+				<a href="mailto:shannonphu@sbcglobal.net" id="email" class="medium-4 columns"><img src="mailicon.png" />  shannonphu@sbcglobal.net</a>
 				<a href="http://shannonphu.github.io/" id="website" class="medium-4 columns"><img src="globe.png" /> shannonphu.github.io</a>
 				<a href="https://github.com/shannonphu" id="github" class="medium-4 columns"><img src="githubicon.png" /> shannonphu</a>
 			</div>
@@ -27,13 +27,26 @@
 
 					<section class="subject" >
 						<ul>
+							<div class="jobTitle">iOS Project Manager</div>
+							<div class="companyName details">Morning Sign Out, Incorporated</div>
+							<div class="timeRange when details">August 2015 - present</div>
+							<div class="jobInfo">
+								<li>lead planning and execution of iOS application development and interacted with the Android and web team to improve company tech performance as a whole</li>
+								<li>implement optimized and convenient JSON extraction API through AFNetworking and multithreading to obtain web data from HTTP requests</li>
+								<li>coordinate and train team of iOS developers to use development tools (Git, Objective-C, JSON, AFNetworking, CocoaPods)</li>
+							</div>
+						</ul>
+					</section>
+
+					<section class="subject" >
+						<ul>
 							<div class="jobTitle">Software Engineering Intern</div>
 							<div class="companyName details">NASA Ames Research Center | NuLeaf Technologies</div>
 							<div class="timeRange when details">June 2015 - present</div>
 							<div class="jobInfo">
-								<li>design class model and structure of simulation software for atomic interactions and molecular forces</li>
+								<li>design class models and simulation software architecture for modelling atomic interactions and molecular forces</li>
 								<li>implement websockets and CGI programming to bridge C++ server and web client</li>
-								<li>built database table in SQL for company website</li>
+								<li>built company website's database tables in SQL</li>
 							</div>
 						</ul>
 					</section>
@@ -45,7 +58,7 @@
 							<div class="timeRange when details">April 2015 - present</div>
 							<div class="jobInfo">
 								<li>design and develop custom responsive websites suiting the needs of reporters and graphic designers</li>
-								<li>consistently maintain and update content on site using WordPress</li>
+								<li>consistently maintain and release new stories through collaboration with other newsroom departments</li>
 							</div>
 						</ul>
 					</section>
@@ -56,9 +69,9 @@
 							<div class="companyName details">Lively DevOps</div>
 							<div class="timeRange when details">January 2012 - present</div>
 							<div class="jobInfo">
-								<li>create variety interactive, mobile-friendly web applications for varying content</li>
-								<li>adhere to MVC design pattern to write easily extendable code</li>
-								<li>gather feedback on UI/UX to improve site navigation and usage</li>
+								<li>create variety of interactive, mobile-friendly web applications for varying content</li>
+								<li>adhere to MVC design pattern to write easily extendable code for web applications</li>
+								<li>improve site navigation and usage through feedback on UI/UX</li>
 							</div>
 						</ul>
 					</section>
@@ -77,8 +90,8 @@
 				<div class="subjectRight" id="techSkills">
 					<h3>Technical Skills</h3>
 					<section>
-						<ul>C++, Objective-C</ul>
-						<ul>HTML, CSS, Sass</ul>
+						<ul>C++, Objective-C, iOS SDK</ul>
+						<ul>HTML, Jade, CSS, Sass</ul>
 						<ul>JavaScript, jQuery, Node.js</ul>
 						<ul>Python, Django</ul>
 						<ul>SQL, Git</ul>
@@ -88,40 +101,34 @@
 				<div id="projects">
 					<h3>Projects</h3>
 					<section>
-						<ul><strong>BoulderBlast</strong> Blast through bullet-shooting robots and other obstacles to collect all the gems in this multi-level C++ game</ul>
-						<ul><strong>Find Me Milk Tea</strong> creative iOS MapKit app displaying closest bubble tea places and their menus</ul>
- 						<ul><strong>xspense</strong> track expenses and budgets to interpret spending in this Django webapp</ul>
-						<ul style="font-size: 0.8em;text-align:center;margin-top: 10px;margin-bottom:10px;">See more on my GitHub!</ul>
+						<ul><strong>BoulderBlast</strong> Blast through levels against bullet-shooting robots and boulders to collect gems to win [C++ OpenGL]</ul>
+						<ul><strong>oceanize</strong> be productive and happy during remote meetings by using built-in chat server and store notes creatively [socket.io node.js]</ul>
+						<ul><strong>Find Me Milk Tea</strong> creative iOS app displaying closest bubble tea places and their menus [RestKit MapKit AFNetworking]</ul>
+ 						<ul><strong>xspense</strong> track expenses and budgets to interpret spending [Python Django]</ul>
 					</section>
+						<ul style="font-size: 0.8em;text-align:center;margin-top: 10px;margin-bottom:10px;">See more on my GitHub!</ul>
 				</div>
 				
 				<div id="otherSkills">
 					<h3>Additional Skills</h3>
 					<section style="margin-bottom: 0;">	
-						<ul>iOS App Development</ul>
-						<ul>UI Design</ul>
+						<ul>UI and Graphic Design</ul>
 						<ul>Fluency in English, Spanish, and Chinese</ul>
 					</section>
 				</div>
 			</aside>
+
 		</main>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script type="text/javascript">
 
 			var isPrint = window.location.pathname.indexOf("/print/") > -1;
-			console.log(isPrint);
-
 
 		    var beforePrint = function() {
-		    	// before print
-		    	$('aside').removeClass('medium-4 columns');
-            	$('#workExperience').removeClass('medium-8 columns');
             	$('#contact a').removeClass('medium-4 columns');
-            	$('#contact a').css('margin-right', '2em');
+            	$('#contact a').css('margin-right', '3.5em');
 		    };
 		    var afterPrint = function() {
-            	$('aside').addClass('medium-4 columns');
-            	$('#workExperience').addClass('medium-8 columns');
             	$('#contact a').addClass('medium-4 columns');
             	$('#contact a').css('margin-right', '0');
 		    };

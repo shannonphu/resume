@@ -30,7 +30,7 @@ main li, main ul {
 main .subject {
   margin-bottom: 2em; }
 main .col {
-  display: inline-block; }
+  display: block; }
   main .col h3 {
     font-size: 1.5em;
     font-weight: 500; }
@@ -52,7 +52,11 @@ main .col {
       float: right; }
     main .col section li {
       margin-bottom: 5px; }
+main #workExperience {
+  width: 60%; }
 main aside {
+  float: right;
+  width: 40%;
   font-size: 1.1em; }
   main aside #education #school {
     font-weight: 600; }
@@ -70,11 +74,26 @@ main aside {
   a[href]:after {
     content: none !important; }
 
+  .name {
+    font-size: 3.2em !important; }
+
+  #contact {
+    font-size: 0.8em !important; }
+
   #workExperience {
-    width: 60%; }
+    float: left !important;
+    width: 60% !important;
+    display: inline-block !important; }
 
   aside {
-    float: right;
-    width: 32%; } }
+    float: right !important;
+    display: inline-block !important;
+    width: 37% !important; }
+
+  #otherSkills h3 {
+    font-size: 1.3em; }
+
+  ul {
+    font-size: 0.8em; } }
 
 /*# sourceMappingURL=resume.css.map */
