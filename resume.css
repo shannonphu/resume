@@ -32,7 +32,7 @@ main .subject {
 main .col {
   display: block; }
   main .col h3 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 500; }
   main .col section {
     border-left: 1px solid darkgrey; }
@@ -65,12 +65,17 @@ main aside {
   main aside #expectedDate {
     float: right;
     font-size: 0.8em; }
+  main aside #course-work {
+    font-size: 0.8em; }
   main aside .subjectRight {
     margin-bottom: 0.7em; }
 
 @media print {
   a[href]:after {
     content: none !important; }
+
+  h3 {
+    font-size: 1.2em !important; }
 
   .name {
     font-size: 3.2em !important; }
@@ -89,9 +94,12 @@ main aside {
     width: 37% !important; }
 
   #otherSkills h3 {
-    font-size: 1.3em; }
+    font-size: 1.1em !important; }
+
+  #course-work {
+    font-size: 0.7em !important; }
 
   ul {
-    font-size: 0.8em; } }
+    font-size: 0.775em !important; } }
 
 /*# sourceMappingURL=resume.css.map */

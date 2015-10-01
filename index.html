@@ -14,8 +14,9 @@
 				<a href="#">Shannon Phu</a>
 			</div>
 			
-			<div id="contact" class="row">			
-				<a href="mailto:shannonphu@sbcglobal.net" id="email" class="medium-4 columns"><img src="mailicon.png" />  shannonphu@sbcglobal.net</a>
+			<div id="contact" class="row">		
+				<!-- <a href="#" id="phone" class="medium-4 columns"><img src="phone.png"> 1-408-510-9759</a>	 -->
+				<a href="mailto:shannonphu@sbcglobal.net" id="email" class="medium-4 columns"><img src="mailicon.png" /> shannonphu@sbcglobal.net</a>
 				<a href="http://shannonphu.github.io/" id="website" class="medium-4 columns"><img src="globe.png" /> shannonphu.github.io</a>
 				<a href="https://github.com/shannonphu" id="github" class="medium-4 columns"><img src="githubicon.png" /> shannonphu</a>
 			</div>
@@ -27,7 +28,21 @@
 
 					<section class="subject" >
 						<ul>
-							<div class="jobTitle">iOS Project Manager and Developer</div>
+							<div class="jobTitle">Software Engineering Intern</div>
+							<div class="companyName details">NASA Ames Research Center | NuLeaf Tech</div>
+							<div class="timeRange when details">June 2015 - present</div>
+							<div class="jobInfo">
+								<li>design and develop chemical nano-simulation models and software architecture for simulating atomic interactions and molecular forces</li>
+								<li>implement molecular models as graph data structure</li>
+								<li>use websockets and CGI programming to create C++ server and web client handshake</li>
+								<li>built company website's database tables with SQL</li>
+							</div>
+						</ul>
+					</section>
+
+					<section class="subject" >
+						<ul>
+							<div class="jobTitle">Lead iOS Developer</div>
 							<div class="companyName details">Morning Sign Out, Incorporated</div>
 							<div class="timeRange when details">August 2015 - present</div>
 							<div class="jobInfo">
@@ -35,19 +50,6 @@
 								<li>implement optimized and convenient JSON web data extraction API through AFNetworking, multithreading, and HTTP requests</li>
 								<li>formulate easily extendable and scalable code base</li>
 								<li>coordinate and train team of iOS developers to use development tools (Git, Objective-C, JSON, AFNetworking, CocoaPods)</li>
-							</div>
-						</ul>
-					</section>
-
-					<section class="subject" >
-						<ul>
-							<div class="jobTitle">Software Engineering Intern</div>
-							<div class="companyName details">NASA Ames Research Center | NuLeaf Technologies</div>
-							<div class="timeRange when details">June 2015 - present</div>
-							<div class="jobInfo">
-								<li>design and develop chemical nano-simulation models and software architecture for simulating atomic interactions and molecular forces</li>
-								<li>implement websockets and CGI programming to create C++ server and web client handshake</li>
-								<li>built company website's database tables with SQL</li>
 							</div>
 						</ul>
 					</section>
@@ -68,7 +70,7 @@
 						<ul>
 							<div class="jobTitle">Full Stack Developer</div>
 							<div class="companyName details">Lively DevOps</div>
-							<div class="timeRange when details">January 2012 - present</div>
+							<div class="timeRange when details">January 2012 - June 2015</div>
 							<div class="jobInfo">
 								<li>create variety of interactive, mobile-friendly web applications for varying content</li>
 								<li>adhere to MVC design pattern to write easily extendable code for web applications</li>
@@ -82,9 +84,17 @@
 				<div class="subjectRight" id="education">
 					<h3>Education</h3>
 					<section>
-						<ul id="expectedDate">expected 2018</ul>
+						<ul id="expectedDate">expected June 2018</ul>
 						<ul id="school">UCLA</ul>
 						<ul id="degree">B.S. Computer Science and Engineering</ul>
+						<!-- <ul id="course-work">
+							<strong>Relevant Coursework:</strong> <br>
+							Intro to C++, Intro to EE <br>
+							C++ Data Structures and Algorithms <br>
+							Intro to Computer Organization <br>
+							Logic Design of Digital Systems <br>
+							Unix Software Construction Lab
+						</ul> -->
 					</section>
 				</div>
 				
@@ -95,7 +105,7 @@
 						<ul>HTML, Jade, CSS, Sass</ul>
 						<ul>JavaScript, jQuery, Node.js</ul>
 						<ul>Python, Django</ul>
-						<ul>SQL, Git</ul>
+						<ul>SQL, Unix, Git</ul>
 					</section>
 				</div>
 				
@@ -126,11 +136,13 @@
 			var isPrint = window.location.pathname.indexOf("/print/") > -1;
 
 		    var beforePrint = function() {
-            	$('#contact a').removeClass('medium-4 columns');
-            	$('#contact a').css('margin-right', '3.5em');
+            	$('#contact a').removeClass('medium-3 columns');
+            	$('#contact').prepend('<a href="#" id="phone"><img src="phone.png"> 1-408-510-9759</a>');
+            	$('#contact a').css('margin-right', '1.1em');
 		    };
 		    var afterPrint = function() {
-            	$('#contact a').addClass('medium-4 columns');
+		    	$('#phone').remove();
+            	$('#contact a').addClass('medium-3 columns');
             	$('#contact a').css('margin-right', '0');
 		    };
 
