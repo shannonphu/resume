@@ -98,8 +98,10 @@ main {
     main aside ul {
       margin: 0 0 0 1em;
       margin-bottom: 5px;
-      padding: 0;
-      font-size: 32px; }
+      padding: 0; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+        main aside ul {
+          font-size: 32px; } }
     main aside #course-work {
       font-size: 0.8em; }
     main aside .subjectRight {

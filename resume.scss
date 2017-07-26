@@ -162,7 +162,9 @@ main {
 			margin: $section-margin;
 			margin-bottom: $between-details-margin;
 			padding: 0;
-			font-size: $mobile-detail-font-size;
+			@include mobile {
+				font-size: $mobile-detail-font-size;
+			}
 		}
 
 		#course-work {
