@@ -6,6 +6,8 @@ $section-margin: 0 0 0 1em;
 $job-detail-font-size: 1.1em;
 $between-details-margin: 5px;
 
+$mobile-detail-font-size: 32px;
+
 $mobile-portrait-width: 320px;
 $mobile-landscape-width: 736px;
 @mixin mobile {
@@ -53,7 +55,7 @@ header {
 
 		@include mobile {
 	  		padding: 15px 0 15px 0;
-	  		font-size: 1.8em;
+	  		font-size: 28px;
 		}
 	}
 }
@@ -78,6 +80,9 @@ main {
 		h3 {
 			font-size: 1.3em;
 			font-weight: 500;
+			@include mobile {
+				font-size: 36px;
+			}
 		}
 		
 		section {
@@ -88,7 +93,10 @@ main {
 
 			.jobTitle {
 				font-weight: 600;
-				font-size: $job-detail-font-size
+				font-size: $job-detail-font-size;
+				@include mobile {
+					font-size: $mobile-detail-font-size;
+				}
 			}
 
 			.companyName {
@@ -101,7 +109,8 @@ main {
 				font-size: $job-detail-font-size - 0.1;
 				@include mobile {
 					display: block;
-					margin-bottom: 5px;
+					margin: 15px 0 15px 0;
+					font-size: $mobile-detail-font-size;
 				}
 			}
 
@@ -109,7 +118,7 @@ main {
 				padding-left: 1em;
 				@include mobile {
 					padding-left: 2.5em;
-					font-size: 0.9em;
+					font-size: 30px;
 				}
 			}
 
@@ -135,21 +144,25 @@ main {
 			#school {
 				font-weight: 600;
 			}
+
+			#expectedDate {
+				float: right;
+				font-size: 0.75em;
+			}
+
+			@include mobile {
+				font-size: $mobile-detail-font-size;
+				#expectedDate {
+					font-size: $mobile-detail-font-size;
+				}
+			}
 		}
 
 		ul {
 			margin: $section-margin;
 			margin-bottom: $between-details-margin;
 			padding: 0;
-			font-size: 0.9em;
-		}
-
-		#expectedDate {
-			float: right;
-			font-size: 0.75em;
-			@include mobile {
-				font-size: 1.75em;
-			}
+			font-size: $mobile-detail-font-size;
 		}
 
 		#course-work {
