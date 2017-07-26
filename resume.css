@@ -24,52 +24,77 @@ header {
     header #contact img {
       height: 1.4em;
       vertical-align: text-top; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+      header #contact {
+        padding: 15px 0 15px 0;
+        font-size: 1.8em; } }
 
-main li, main ul {
-  line-height: 120%; }
-main .subject {
-  margin-bottom: 2em; }
-main .col {
-  display: block; }
-  main .col h3 {
-    font-size: 1.3em;
-    font-weight: 500; }
-  main .col section {
-    border-left: 1px solid darkgrey; }
-    main .col section .jobTitle {
-      font-weight: 600;
-      margin-bottom: 0;
-      font-size: 1.1em; }
-    main .col section .companyName {
-      font-style: italic; }
-    main .col section .details {
-      display: inline-block;
-      margin-bottom: 10px;
-      font-size: 1em; }
-    main .col section .jobInfo {
-      padding-left: 1em; }
-    main .col section .when {
-      float: right; }
-    main .col section li {
-      margin-bottom: 5px; }
-main aside {
-  float: right;
-  width: 40%;
-  font-size: 1.1em; }
-  main aside #education #school {
-    font-weight: 600; }
-  main aside ul {
-    margin: 0 0 0 1em;
-    margin-bottom: 5px;
-    padding: 0;
-    font-size: 0.9em; }
-  main aside #expectedDate {
+main {
+  margin-bottom: 30px; }
+  main li, main ul {
+    line-height: 120%; }
+  main .subject {
+    margin-bottom: 2em; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+      main .subject {
+        margin-bottom: 3em; } }
+  main .col {
+    display: block; }
+    main .col h3 {
+      font-size: 1.3em;
+      font-weight: 500; }
+    main .col section {
+      border-left: 1px solid darkgrey; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+        main .col section {
+          border-left: none; } }
+      main .col section .jobTitle {
+        font-weight: 600;
+        font-size: 1.1em; }
+      main .col section .companyName {
+        font-style: italic; }
+      main .col section .details {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 1em; }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+          main .col section .details {
+            display: block;
+            margin-bottom: 5px; } }
+      main .col section .jobInfo {
+        padding-left: 1em; }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+          main .col section .jobInfo {
+            padding-left: 2.5em;
+            font-size: 0.9em; } }
+      main .col section .timeRange {
+        float: right; }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+          main .col section .timeRange {
+            float: none; } }
+      main .col section li {
+        margin-bottom: 5px; }
+  main aside {
     float: right;
-    font-size: 0.75em; }
-  main aside #course-work {
-    font-size: 0.8em; }
-  main aside .subjectRight {
-    margin-bottom: 0.7em; }
+    width: 40%;
+    font-size: 1.1em; }
+    main aside #education #school {
+      font-weight: 600; }
+    main aside ul {
+      margin: 0 0 0 1em;
+      margin-bottom: 5px;
+      padding: 0;
+      font-size: 0.9em; }
+    main aside #expectedDate {
+      float: right;
+      font-size: 0.75em; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+        main aside #expectedDate {
+          font-size: 1.75em; } }
+    main aside #course-work {
+      font-size: 0.8em; }
+    main aside .subjectRight {
+      margin-bottom: 0.7em; }
 
 @media print {
   a[href]:after {
@@ -93,9 +118,6 @@ main aside {
     float: right !important;
     display: inline-block !important;
     width: 37% !important; }
-
-  #otherSkills h3 {
-    font-size: 1.1em !important; }
 
   #course-work {
     font-size: 0.7em !important; }
