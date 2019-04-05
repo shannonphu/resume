@@ -14,7 +14,7 @@
 				<a href="#">Shannon Phu</a>
 			</div>
 			<div id="contact" class="row">		
-				<a href="mailto:shannonphu@sbcglobal.net" id="email" class="small-12 large-4 columns"><img src="mailicon.png" /> shannonphu@sbcglobal.net</a>
+				<a href="mailto:shannonphu@gmail.com" id="email" class="small-12 large-4 columns"><img src="mailicon.png" /> shannonphu@gmail.com</a>
 				<a href="https://shannonphu.github.io/" id="website" class="small-12 large-4 columns"><img src="globe.png" /> shannonphu.github.io</a>
 				<a href="https://github.com/shannonphu" id="github" class="small-12 large-4 columns"><img src="githubicon.png" /> shannonphu</a>
 			</div>
@@ -23,6 +23,18 @@
 		<main>
 			<div class="col medium-12 large-8 columns" id="workExperience">
 				<h3>Work Experience</h3>
+
+				<section class="subject">
+					<ul>
+						<div class="jobTitle">Software Engineer</div>
+						<div class="companyName details">Microsoft | AI Core Knowledge</div>
+						<div class="timeRange when details">September 2018 - Present</div>
+						<div class="jobInfo">
+							<li>developed movie recommendation algorithm using Bing search signals</li>
+							<li>ingested historical sports game data and sports team statistics into Microsoft knowledge graph</li>
+						</div>
+					</ul>
+				</section>
 
 				<section class="subject" >
 					<ul>
@@ -80,7 +92,7 @@
 					</ul>
 				</section>
 
-				<section class="subject" >
+				<section class="subject print-hide" >
 					<ul>
 						<div class="jobTitle">Web Developer</div>
 						<div class="companyName details">The Daily Bruin</div>
@@ -98,7 +110,7 @@
 				<div class="subjectRight" id="education">
 					<h3>Education</h3>
 					<section>
-						<ul id="expectedDate">expected June 2018</ul>
+						<ul id="expectedDate">Graduated June 2018</ul>
 						<ul id="school">UCLA</ul>
 						<ul id="degree">B.S. Computer Science and Engineering</ul>
 					</section>
@@ -107,22 +119,23 @@
 				<div class="subjectRight" id="techSkills">
 					<h3>Technical Skills</h3>
 					<section>
-						<ul>Java, Python, C++, C#</ul>
+						<ul>C#, Python, C++</ul>
 						<ul>Objective-C, Swift, iOS SDK</ul>
-						<ul>HTML, CSS, JavaScript, Node.js</ul>
-						<ul>Git, Bash</ul>
+						<ul>HTML, CSS, JavaScript, React.js, Node.js</ul>
+						<ul>Git, Docker, Bash</ul>
 					</section>
 				</div>
 				
 				<div id="projects">
 					<h3>Projects</h3>
 					<section>
-						<ul><strong>kaleidoscope</strong> static website generator creating custom HTML/CSS source for responsive news article site [node.js react.js MongoDB]</ul>
-						<ul><strong>oceanize</strong> be productive and happy during remote meetings by using built-in chat server and store notes creatively [socket.io node.js]</ul>
-						<ul><strong>Find Me Milk Tea</strong> creative iOS app displaying closest bubble tea places and their menus [Obj-C AFNetworking]</ul>
-						<ul><strong>BoulderBlast</strong> Blast through levels against bullet-shooting robots and boulders to collect gems to win [C++ OpenGL]</ul>
+						<ul><strong>MentorQ</strong> realtime mentor request system built for hackathons to provide mentors for people who need help [node.js react.js MongoDB]</ul>
+						<ul><strong>Kaleidoscope</strong> static website generator creating custom HTML/CSS source for responsive news article site [node.js react.js MongoDB]</ul>
+						<ul><strong>Qollab</strong> realtime virtual whiteboard allowing teachers to write lecture notes and students to annotate notes with questions and comments [node.js react.js socket.io MongoDB]</ul>
+						<ul><strong>Oceanize</strong> be productive and happy during remote meetings by using built-in chat server and store notes creatively [socket.io node.js]</ul>
+						<ul><strong>Silver Lining</strong> article browser iOS app for users to read, search, bookmark, filter, and comment on article feeds [Obj-C AFNetworking Firebase]</ul>
+						<ul><strong>BoulderBlast</strong> blast through levels against bullet-shooting robots and boulders to collect gems to win [C++ OpenGL]</ul>
 					</section>
-						<ul style="font-size: 16px;text-align:center;margin-top: 10px;margin-bottom:10px;">See more on my GitHub!</ul>
 				</div>
 			</aside>
 
@@ -137,23 +150,14 @@
             	$('#contact a').removeClass('medium-3 columns');
             	$('#contact').prepend('<a href="#" id="phone"><img src="phone.png"> 1-408-510-9759</a>');
             	$('#contact a').css('margin-right', '1.1em');
+				$('.print-hide').hide();
 		    };
 		    var afterPrint = function() {
 		    	$('#phone').remove();
             	$('#contact a').addClass('medium-3 columns');
             	$('#contact a').css('margin-right', '0');
+				$('.print-hide').show();
 		    };
-
-		    if (window.matchMedia) {
-		        var mediaQueryList = window.matchMedia('print');
-		        mediaQueryList.addListener(function(mql) {
-		            if (mql.matches) {
-		                beforePrint();
-		            } else {
-		                afterPrint();
-		            }
-		        });
-		    }
 
 		    window.onbeforeprint = beforePrint;
 		    window.onafterprint = afterPrint;
