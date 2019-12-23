@@ -30,8 +30,11 @@
 						<div class="companyName details">Microsoft | AI Core Knowledge</div>
 						<div class="timeRange when details">September 2018 - Present</div>
 						<div class="jobInfo">
-							<li>developed movie recommendation algorithm using Bing search signals</li>
-							<li>ingested historical sports game data and sports team statistics into Microsoft knowledge graph</li>
+							<li>trained and tuned user interest detection models (logistic regression) based on user search history data using PySpark and Databricks</li>
+							<li>researched scalable feature engineering techniques on knowledge graphs for use in machine learning models</li>
+							<li>productionized training and inference pipelines to generate daily interest predictions</li>
+							<li>established model evaluation metrics to measure model AUC and calibration</li>
+							<li>developed content-based movie recommendation algorithm using Bing search signals</li>
 						</div>
 					</ul>
 				</section>
@@ -74,7 +77,7 @@
 						<div class="jobInfo">
 							<li>developed "Events to Watch" module in Bing Olympics experience that showed daily top matches of interest</li>
 							<li>dispatched calls to fetch data, update data stores, and render C# UX components with fresh data</li>
-							<li>implemented rendering of region-specific data and translated text</li>
+							<li>implemented rendering of locale-specific data and translated text</li>
 						</div>
 					</ul>
 				</section>
@@ -110,19 +113,19 @@
 				<div class="subjectRight" id="education">
 					<h3>Education</h3>
 					<section>
-						<ul id="expectedDate">Graduated June 2018</ul>
-						<ul id="school">UCLA</ul>
+						<ul id="school">University of California, Los Angeles</ul>
 						<ul id="degree">B.S. Computer Science and Engineering</ul>
+						<ul id="expectedDate">June 2018</ul>
 					</section>
 				</div>
 				
 				<div class="subjectRight" id="techSkills">
 					<h3>Technical Skills</h3>
 					<section>
-						<ul>C#, Python, C++</ul>
+						<ul>Python, Spark, Databricks, C#, C++</ul>
 						<ul>Objective-C, Swift, iOS SDK</ul>
 						<ul>HTML, CSS, JavaScript, React.js, Node.js</ul>
-						<ul>Git, Docker, Bash</ul>
+						<ul>Git, Docker</ul>
 					</section>
 				</div>
 				
@@ -148,7 +151,7 @@
 
 		    var beforePrint = function() {
             	$('#contact a').removeClass('medium-3 columns');
-            	$('#contact').prepend('<a href="#" id="phone"><img src="assets/phone.png"> 1-408-510-9759</a>');
+            	$('#contact').prepend('<a href="#" id="phone"><img src="assets/phone.png"> 408-510-9759</a>');
             	$('#contact a').css('margin-right', '1.1em');
 				$('.print-hide').hide();
 		    };

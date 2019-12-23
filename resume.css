@@ -34,7 +34,7 @@ main {
   main li, main ul {
     line-height: 120%; }
   main .subject {
-    margin-bottom: 2em; }
+    margin-bottom: 15px; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
       main .subject {
         margin-bottom: 3em; } }
@@ -87,9 +87,6 @@ main {
     font-size: 1.1em; }
     main aside #education #school {
       font-weight: 600; }
-    main aside #education #expectedDate {
-      float: right;
-      font-size: 0.75em; }
     @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
       main aside #education {
         font-size: 32px; }
@@ -108,6 +105,10 @@ main {
       margin-bottom: 0.7em; }
 
 @media print {
+  body {
+    padding-left: 5px;
+    padding-right: 5px; }
+
   a[href]:after {
     content: none !important; }
 
@@ -134,10 +135,6 @@ main {
     font-size: 0.7em !important; }
 
   ul {
-    font-size: 0.775em !important; }
-
-  #expectedDate {
-    font-size: 0.6em !important;
-    margin-left: 2em; } }
+    font-size: 0.775em !important; } }
 
 /*# sourceMappingURL=resume.css.map */
