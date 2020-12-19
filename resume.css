@@ -1,140 +1,227 @@
 body {
   padding-left: 7%;
   padding-right: 7%;
-  font-family: 'Titillium Web', sans-serif; }
-  body a {
-    cursor: pointer; }
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body a {
+  cursor: pointer;
+}
 
 header {
-  margin-bottom: 10px; }
-  header a {
-    color: black;
-    font-weight: 600;
-    text-decoration: none; }
-    header a:hover {
-      color: black; }
+  margin-bottom: 10px;
+}
+
+header a {
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: black;
+}
+
+header .name {
+  font-size: 56px;
+  text-align: center;
+  border-bottom: 3px solid #DEDEDE;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
   header .name {
-    font-size: 3em;
-    text-align: center;
-    border-bottom: 3px solid #DEDEDE; }
+    font-size: 78px;
+  }
+}
+
+header #contact {
+  text-align: center;
+  border-bottom: 3px solid #DEDEDE;
+  padding: 7px 0 7px 0;
+}
+
+header #contact img {
+  height: 1.4em;
+  vertical-align: text-top;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
   header #contact {
-    text-align: center;
-    border-bottom: 3px solid #DEDEDE;
-    padding: 7px 0 7px 0; }
-    header #contact img {
-      height: 1.4em;
-      vertical-align: text-top; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
-      header #contact {
-        padding: 15px 0 15px 0;
-        font-size: 28px; } }
+    padding: 15px 0 15px 0;
+    font-size: 28px;
+  }
+}
 
 main {
-  margin-bottom: 30px; }
-  main li, main ul {
-    line-height: 120%; }
+  margin-bottom: 30px;
+}
+
+main li,
+main ul {
+  line-height: 120%;
+}
+
+main .subject {
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
   main .subject {
-    margin-bottom: 15px; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
-      main .subject {
-        margin-bottom: 3em; } }
-  main .col {
-    display: block; }
-    main .col h3 {
-      font-size: 1.3em;
-      font-weight: 500; }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
-        main .col h3 {
-          font-size: 36px; } }
-    main .col section {
-      border-left: 1px solid darkgrey; }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
-        main .col section {
-          border-left: none; } }
-      main .col section .jobTitle {
-        font-weight: 600;
-        font-size: 1.1em; }
-        @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
-          main .col section .jobTitle {
-            font-size: 32px; } }
-      main .col section .companyName {
-        font-style: italic; }
-      main .col section .details {
-        display: inline-block;
-        margin-bottom: 10px;
-        font-size: 1em; }
-        @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
-          main .col section .details {
-            display: block;
-            margin: 15px 0 15px 0;
-            font-size: 32px; } }
-      main .col section .jobInfo {
-        padding-left: 1em; }
-        @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
-          main .col section .jobInfo {
-            padding-left: 2.5em;
-            font-size: 30px; } }
-      main .col section .timeRange {
-        float: right; }
-        @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
-          main .col section .timeRange {
-            float: none; } }
-      main .col section li {
-        margin-bottom: 5px; }
-  main aside {
-    float: right;
-    width: 40%;
-    font-size: 1.1em; }
-    main aside #education #school {
-      font-weight: 600; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
-      main aside #education {
-        font-size: 32px; }
-        main aside #education #expectedDate {
-          font-size: 32px; } }
-    main aside ul {
-      margin: 0 0 0 1em;
-      margin-bottom: 5px;
-      padding: 0; }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
-        main aside ul {
-          font-size: 32px; } }
-    main aside #course-work {
-      font-size: 0.8em; }
-    main aside .subjectRight {
-      margin-bottom: 0.7em; }
+    margin-bottom: 3em;
+  }
+}
+
+main .col {
+  display: block;
+}
+
+main .col h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+  main .col h3 {
+    font-size: 36px;
+  }
+}
+
+main .col section {
+  border-left: 1px solid darkgrey;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+  main .col section {
+    border-left: none;
+  }
+}
+
+main .col section .companyName {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+  main .col section .companyName {
+    font-size: 42px;
+  }
+}
+
+main .col section .jobTitle {
+  font-weight: 600;
+}
+
+main .col section .details {
+  display: inline-block;
+  margin: 7px 0 7px 0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+  main .col section .details {
+    display: block;
+    margin: 15px 0 15px 0;
+    font-size: 32px;
+  }
+
+  main .col section .jobInfo {
+    padding-left: 1em;
+    display: block;
+  }
+}
+
+main .col section .jobInfo {
+  padding-left: 1em;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+  main .col section .jobInfo {
+    padding-left: 2.5em;
+    font-size: 30px;
+  }
+}
+
+main .col section .timeRange {
+  float: right;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+  main .col section .timeRange {
+    float: left;
+    width: 100%;
+  }
+}
+
+main .col section li {
+  margin-bottom: 5px;
+}
+
+main aside {
+  float: right;
+  width: 40%;
+  font-size: 1.1em;
+}
+
+main aside #education #school {
+  font-weight: 600;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+  main aside #education {
+    font-size: 32px;
+  }
+  main aside #education #expectedDate {
+    font-size: 32px;
+  }
+}
+
+main aside ul {
+  margin: 0 0 0 1em;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+  main aside ul {
+    font-size: 32px;
+  }
+}
+
+main aside #course-work {
+  font-size: 0.8em;
+}
+
+main aside .subjectRight {
+  margin-bottom: 0.7em;
+}
 
 @media print {
   body {
     padding-left: 5px;
-    padding-right: 5px; }
-
+    padding-right: 5px;
+  }
   a[href]:after {
-    content: none !important; }
-
+    content: none !important;
+  }
   h3 {
-    font-size: 1.2em !important; }
-
+    font-size: 1.2em !important;
+  }
   .name {
-    font-size: 2.5em !important; }
-
+    font-size: 2.5em !important;
+  }
   #contact {
-    font-size: 0.8em !important; }
-
+    font-size: 0.8em !important;
+  }
   #workExperience {
     float: left !important;
     width: 60% !important;
-    display: inline-block !important; }
-
+    display: inline-block !important;
+  }
   aside {
     float: right !important;
     display: inline-block !important;
-    width: 37% !important; }
-
-  #course-work {
-    font-size: 0.7em !important; }
-
+    width: 37% !important;
+  }
   ul {
-    font-size: 0.775em !important; } }
-
-/*# sourceMappingURL=resume.css.map */
+    font-size: 0.775em !important;
+  }
+}
