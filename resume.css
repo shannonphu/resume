@@ -52,10 +52,6 @@ header #contact img {
   }
 }
 
-main {
-  /* margin-bottom: 30px; */
-}
-
 main li,
 main ul {
   line-height: 120%;
@@ -117,14 +113,7 @@ main .col section .details {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
   main .col section .details {
-    /* display: block; */
-    /* margin: 15px 0 15px 0; */
     font-size: 48px;
-  }
-
-  main .col section .jobInfo {
-    /* padding-left: 1em; */
-    /* display: block; */
   }
 }
 
