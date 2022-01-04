@@ -48,12 +48,12 @@ header #contact img {
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
   header #contact {
     padding: 15px 0 15px 0;
-    font-size: 28px;
+    font-size: 36px;
   }
 }
 
 main {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 main li,
@@ -69,10 +69,9 @@ main .subject {
   main .subject {
     margin-bottom: 3em;
   }
-}
-
-main .col {
-  display: block;
+  main ul {
+    line-height: 1;
+  }
 }
 
 main .col h3 {
@@ -118,25 +117,25 @@ main .col section .details {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
   main .col section .details {
-    display: block;
-    margin: 15px 0 15px 0;
-    font-size: 32px;
+    /* display: block; */
+    /* margin: 15px 0 15px 0; */
+    font-size: 48px;
   }
 
   main .col section .jobInfo {
-    padding-left: 1em;
-    display: block;
+    /* padding-left: 1em; */
+    /* display: block; */
   }
 }
 
 main .col section .jobInfo {
-  padding-left: 1em;
+  padding-left: 15px;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
   main .col section .jobInfo {
-    padding-left: 2.5em;
-    font-size: 30px;
+    padding-left: 30px;
+    font-size: 36px;
   }
 }
 
@@ -175,23 +174,16 @@ main aside #education #school {
 }
 
 main aside ul {
-  margin: 0 0 0 1em;
+  margin: 0 0 0 15px;
   margin-bottom: 5px;
   padding: 0;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
   main aside ul {
-    font-size: 32px;
+    font-size: 36px;
+    margin-bottom: 20px;
   }
-}
-
-main aside #course-work {
-  font-size: 0.8em;
-}
-
-main aside .subjectRight {
-  margin-bottom: 0.7em;
 }
 
 @media print {
@@ -203,25 +195,25 @@ main aside .subjectRight {
     content: none !important;
   }
   h3 {
-    font-size: 1.2em !important;
+    font-size: 12px;
   }
   .name {
-    font-size: 2.5em !important;
+    font-size: 24px;
   }
   #contact {
-    font-size: 0.8em !important;
+    font-size: 12px;
   }
   #workExperience {
     float: left !important;
-    width: 63% !important;
+    width: 65% !important;
     display: inline-block !important;
   }
   aside {
     float: right !important;
     display: inline-block !important;
-    width: 37% !important;
+    width: 34% !important;
   }
   ul {
-    font-size: 0.775em !important;
+    font-size: 13px;
   }
 }
