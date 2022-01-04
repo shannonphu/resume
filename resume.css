@@ -125,6 +125,8 @@ main .col section .jobInfo {
   main .col section .jobInfo {
     padding-left: 30px;
     font-size: 48px;
+    margin-top: 80px;
+    display: block;
   }
 }
 
@@ -135,6 +137,7 @@ main .col section .timeRange {
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
   main .col section .timeRange {
     float: left;
+    display: block;
     width: 100%;
     margin-bottom: 30px;
   }
