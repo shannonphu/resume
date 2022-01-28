@@ -192,13 +192,13 @@ main aside ul {
   }
   #workExperience {
     float: left !important;
-    width: 65% !important;
+    width: 66% !important;
     display: inline-block !important;
   }
   aside {
     float: right !important;
     display: inline-block !important;
-    width: 34% !important;
+    width: 33% !important;
   }
   ul {
     font-size: 13px;
