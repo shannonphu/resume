@@ -52,9 +52,13 @@ header #contact img {
   }
 }
 
+main.main {
+  margin-top: 15px;
+}
+
 main li,
 main ul {
-  line-height: 120%;
+  line-height: 130%;
 }
 
 main .subject {
@@ -192,15 +196,15 @@ main aside ul {
   }
   #workExperience {
     float: left !important;
-    width: 66% !important;
+    width: 65% !important;
     display: inline-block !important;
   }
   aside {
     float: right !important;
     display: inline-block !important;
-    width: 33% !important;
+    width: 35% !important;
   }
   ul {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
